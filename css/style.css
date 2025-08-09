@@ -1,0 +1,131 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+  color: #555;
+}
+
+section {
+  margin-top: 30px;
+}
+
+section p {
+  line-height: 1.6;
+  color: #555;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: green;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  ul li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 15px;
+  }
+
+  .profile-pic {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  ul li {
+    font-size: 0.8em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  h1,
+  h2 {
+    color: #ffffff;
+  }
+
+  p {
+    color: #b0b0b0;
+  }
+
+  .contact a {
+    color: #bb86fc;
+  }
+}
